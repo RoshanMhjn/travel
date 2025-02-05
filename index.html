@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ZORBA Holidays</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#" class="logo">ZORBA Holidays</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#tour">TOUR</a></li>
+        <li><a href="#package">PACKAGE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#">BOOK TRIP</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn">BOOK TRIP</button>
+      </div>
+    </nav>
+
+    <header id="home">
+      <div class="header__container">
+        <div class="header__content">
+          <p>Soar above the Himalayas</p>
+          <h1>Discover the beauty, culture, and, adventure of Nepal</h1>
+          <div class="header__btns">
+            <button class="btn">Book A Trip Now</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container destination__container" id="about">
+      <h2 class="section__header">Popular Destinations</h2>
+      <p class="section__description">
+        Discover Nepal's Most Treasured Destinations
+      </p>
+      <div class="destination__grid">
+        <div class="destination__card">
+          <img
+            src="https://images.pexels.com/photos/15108816/pexels-photo-15108816/free-photo-of-mount-machapuchare-in-the-himalayas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="destination"
+          />
+          <div class="destination__card__details">
+            <div>
+              <h4>Mountains and Lakes</h4>
+              <p>Pokhara, Nepal</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.7
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img
+            src="https://images.pexels.com/photos/7331531/pexels-photo-7331531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="destination"
+          />
+          <div class="destination__card__details">
+            <div>
+              <h4>Sacred Serenity</h4>
+              <p>Lumbini, Nepal</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.5
+            </div>
+          </div>
+        </div>
+        <div class="destination__card">
+          <img
+            src="https://images.pexels.com/photos/20808426/pexels-photo-20808426/free-photo-of-upper-mustang-trek-in-nepal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="destination"
+          />
+          <div class="destination__card__details">
+            <div>
+              <h4>Mystical, Remote</h4>
+              <p>Mustang, Nepal</p>
+            </div>
+            <div class="destination__rating">
+              <span><i class="ri-star-fill"></i></span>
+              4.8
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container journey__container" id="tour">
+      <h2 class="section__header">Embark on Nepal's Wonders!</h2>
+      <p class="section__description">
+        Seamless Exploration of Majestic Peaks and Culture
+      </p>
+      <div class="journey__grid">
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Seamless Booking Process</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-bookmark-3-line"></i></span>
+            <h4>Easy Reservations, One Click Away</h4>
+            <p>
+              From flights and accommodations to activities and transfers,
+              everything you need is available at your fingertips, making travel
+              planning effortless.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Tailored Itineraries</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-landscape-fill"></i></span>
+            <h4>Customized Plans Just for You</h4>
+            <p>
+              Enjoy personalized travel plans designed to match your preferences
+              and interests. Whether you seek adventure or cultural immersion,
+              our tailored itineraries ensure your journey is uniquely yours.
+            </p>
+          </div>
+        </div>
+        <div class="journey__card">
+          <div class="journey__card__bg">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Expert Local Insights</h4>
+          </div>
+          <div class="journey__card__content">
+            <span><i class="ri-map-2-line"></i></span>
+            <h4>Insider Tips and Recommendations</h4>
+            <p>
+              We provide curated recommendations for dining, sightseeing, and
+              hidden gems, so you can experience each destination like a local.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container showcase__container" id="package">
+      <div class="showcase__image">
+        <img
+          src="https://images.pexels.com/photos/30528066/pexels-photo-30528066/free-photo-of-traditional-kathmandu-temple-architecture.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="showcase"
+        />
+      </div>
+      <div class="showcase__content">
+        <h4>UNVEIL THE MAGIC OF NEPAL WITH ZORBA HOLIDAYS</h4>
+        <p>
+          Embark on an extraordinary adventure with Zorba Holidays, where we
+          bring you closer to the heart of Nepal. Specializing in the
+          breathtaking landscapes of Pokhara, the mystical allure of Mustang,
+          and the spiritual serenity of Lumbini, we craft journeys that are as
+          unique as you are. Whether you're drawn to the tranquil beauty of
+          serene lakes, the rugged wilderness of hidden valleys, or the sacred
+          birthplace of Buddha, Zorba Holidays offers meticulously designed
+          itineraries that immerse you in the essence of Nepal.
+        </p>
+        <p>
+          With our expert local guides and personalized experiences, we ensure
+          that every moment of your trip is rich with culture, adventure, and
+          discovery. From exploring the majestic Annapurna Range in Pokhara to
+          witnessing the timeless charm of Mustang's ancient caves, and
+          reflecting at the sacred sites of Lumbini, Zorba Holidays is your
+          trusted partner in creating unforgettable memories. Let us help you
+          unlock the treasures of Nepal, where every journey is a life-changing
+          experience.
+        </p>
+        <div class="showcase__btn">
+          <button class="btn">
+            Book A Tour Now
+            <span><i class="ri-arrow-right-line"></i></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container banner__container">
+      <div class="banner__card">
+        <h4>5+</h4>
+        <p>Years Experience</p>
+      </div>
+      <div class="banner__card">
+        <h4>2K+</h4>
+        <p>Happy Travellers</p>
+      </div>
+      <div class="banner__card">
+        <h4>4.8</h4>
+        <p>Overall Ratings</p>
+      </div>
+    </section>
+
+    <section class="section__container discover__container">
+      <h2 class="section__header">Discover Nepal from New Heights</h2>
+      <p class="section__description">
+        Soar Over Majestic Peaks and Explore Hidden Wonders
+      </p>
+      <div class="discover__grid">
+        <div class="discover__card">
+          <span><i class="ri-treasure-map-fill"></i></span>
+          <h4>Nepal’s Hidden Treasures</h4>
+          <p>
+            Discover Ancient Temples, Serene Lakes, and Rugged Trails on an
+            Unforgettable Journey
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-walk-line"></i></span>
+          <h4>Sacred <br />Trails</h4>
+          <p>
+            Embark on a spiritual journey through Nepal’s sacred sites and
+            serene mountain paths.
+          </p>
+        </div>
+        <div class="discover__card">
+          <span><i class="ri-landscape-line"></i></span>
+          <h4>Cultural Wonders</h4>
+          <p>
+            Immerse yourself in Nepal’s rich heritage, from vibrant festivals to
+            ancient traditions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container client__container">
+      <h2 class="section__header">Loved By Over Thousand Travelers</h2>
+      <p class="section__description">
+        Discover the stories of wanderlust and cherished memories through the
+        eyes of our valued clients.
+      </p>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  ZORBA Holidays has completely transformed my travel
+                  experience. From finding hidden gems in bustling cities to
+                  discovering serene retreats off the beaten path, every detail
+                  was thoughtfully arranged. I can't recommend Skywings enough
+                  for anyone looking to elevate their travel experience!
+                </p>
+              </div>
+              <div class="client__details">
+                <img
+                  src="https://images.pexels.com/photos/634021/pexels-photo-634021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="client"
+                />
+                <div>
+                  <h4>John Adams</h4>
+                  <h5>Travel Blogger</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  My recent adventure with ZORBA Holidays was nothing short of
+                  spectacular. The personalized itineraries and recommendations
+                  they provided led me to extraordinary locations that I would
+                  never have found on my own. I'm already planning my next
+                  adventure with them!
+                </p>
+              </div>
+              <div class="client__details">
+                <img
+                  src="https://images.pexels.com/photos/2589653/pexels-photo-2589653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="client"
+                />
+                <div>
+                  <h4>Emily Thompson</h4>
+                  <h5>Adventure Enthusiast</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Zorba Holidays offered a transformative experience for my
+                  research into historical landmarks. The unique aerial
+                  perspectives and provided a new level of appreciation and
+                  insight into the sites I studied. I highly recommend their
+                  services to fellow historians and cultural enthusiasts.
+                </p>
+              </div>
+              <div class="client__details">
+                <img
+                  src="https://images.pexels.com/photos/3763152/pexels-photo-3763152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="client"
+                />
+                <div>
+                  <h4>Sarah Lee</h4>
+                  <h5>Cultural Historian</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="client__card">
+              <div class="client__content">
+                <div class="client__rating">
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                  <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                  Finding a balance between work and travel can be challenging,
+                  but Skywings made it effortless. Their efficient planning and
+                  excellent recommendations helped me maximize my downtime and
+                  enjoy every moment of my trip. I look forward to working with
+                  them again on future travels.
+                </p>
+              </div>
+              <div class="client__details">
+                <img
+                  src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="client"
+                />
+                <div>
+                  <h4>David Patel</h4>
+                  <h5>Business Executive</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <a href="#" class="logo">ZORBA Holidays</a>
+          </div>
+          <p>
+            Explore the world with ease and excitement through our comprehensive
+            travel platform. Your journey begins here, where seamless planning
+            meets unforgettable experiences.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Cruise</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">
+                <span><i class="ri-phone-fill"></i></span> +977 9843223394
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-record-mail-line"></i></span>
+                info@zorbaholidays.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-2-fill"></i></span> Kathmandu, Nepal
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Subscribe</h4>
+          <form action="/">
+            <input type="text" placeholder="Enter your email" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 ZORBA Holidays. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
