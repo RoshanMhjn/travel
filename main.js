@@ -74,3 +74,20 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 20,
   loop: true,
 });
+
+document
+  .getElementById("destinationCard")
+  .addEventListener("click", function () {
+    document.getElementById("modal").classList.add("show");
+    document.getElementById("overlay").classList.add("show");
+  });
+
+document.getElementById("closeBtn").addEventListener("click", function () {
+  document.getElementById("modal").classList.remove("show");
+  document.getElementById("overlay").classList.remove("show");
+});
+
+document.getElementById("overlay").addEventListener("click", function () {
+  document.getElementById("modal").classList.remove("show");
+  document.getElementById("overlay").classList.remove("show");
+});
