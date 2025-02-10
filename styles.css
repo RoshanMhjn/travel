@@ -175,6 +175,7 @@ header::before {
   justify-content: center;
   align-items: center;
   padding: 5rem;
+ 
 }
 
 .header__content {
@@ -182,6 +183,7 @@ header::before {
   text-align: center;
   backdrop-filter: blur(5px);
   background-color: rgba(91, 87, 87, 0.586);
+  
 }
 
 .header__content p {
@@ -215,7 +217,7 @@ header::before {
 .header__btns a {
   padding: 9px 13px;
   font-size: 1.5rem;
-  color: var(--primary-color);
+  color: var(--text-dark);
   background-color: var(--white);
   border-radius: 100%;
 }
@@ -609,7 +611,48 @@ footer {
   text-align: center;
 }
 
+@media (width < 540px){
+
+  .header__container {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.header__content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 3rem;
+  text-align: center;
+}
+
+.btn{
+  margin-bottom: 1rem;
+}
+
+
+   .header__content{
+    max-width: 100%;
+  }
+}
+
 @media (width > 540px) {
+
+  .header__content{
+    border-radius: 3rem;
+  }
+
+  .btn{
+  margin-bottom: 1rem;
+}
+
+  .header__content{
+    max-width: 100%;
+  }
+
   .destination__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -641,9 +684,14 @@ footer {
 }
 
 @media (width > 768px) {
+
+  .header__content{
+    max-width: 60%;
+  }
+
   nav {
     position: static;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     max-width: var(--max-width);
     margin-inline: auto;
     display: flex;
