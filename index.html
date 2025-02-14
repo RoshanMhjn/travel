@@ -11,6 +11,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/4.0.0-beta.9/lib.min.js"
@@ -37,11 +44,15 @@
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#tour">TOUR</a></li>
         <li><a href="#package">PACKAGE</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li><a href="#">BOOK TRIP</a></li>
+        <li>
+          <a href="https://wa.me/9779843223394" target="_blank">CONTACT US</a>
+        </li>
+        <li>
+          <a href="https://wa.me/9779843223394" target="_blank">BOOK TRIP</a>
+        </li>
       </ul>
       <div class="nav__btns">
-        <button class="btn">BOOK TRIP</button>
+        <button class="btn" onclick="contactWhatsApp()">BOOK TRIP</button>
       </div>
     </nav>
 
@@ -63,37 +74,79 @@
         Discover Nepal's Most Treasured Destinations
       </p>
       <div class="destination__grid">
-        <div class="destination__card" id="destinationCard">
-          <img
-            src="https://images.pexels.com/photos/15108816/pexels-photo-15108816/free-photo-of-mount-machapuchare-in-the-himalayas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="destination"
-          />
-
-          <div class="destination__card__details">
-            <div>
-              <h4>Mountains and Lakes</h4>
-              <p>Pokhara, Nepal</p>
+        <a href="./pages/pokhara.html">
+          <div class="destination__card">
+            <div class="image-container">
+              <img
+                src="https://images.pexels.com/photos/15108816/pexels-photo-15108816/free-photo-of-mount-machapuchare-in-the-himalayas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="destination"
+              />
+              <div class="image-overlay"></div>
+              <div class="image-overlay-text">Show Details</div>
             </div>
-            <div class="destination__rating">
-              <span><i class="ri-star-fill"></i></span>
-              4.7
+
+            <div class="destination__card__details">
+              <div>
+                <h4>Mountains and Lakes</h4>
+                <p>Pokhara, Nepal</p>
+              </div>
+              <div class="destination__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.7
+              </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <!-- popup details -->
+        <a href="./pages/mustang.html">
+          <div class="destination__card">
+            <div class="image-container">
+              <img
+                src="https://images.pexels.com/photos/20808426/pexels-photo-20808426/free-photo-of-upper-mustang-trek-in-nepal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="destination"
+              />
+              <div class="image-overlay"></div>
+              <div class="image-overlay-text">Show Details</div>
+            </div>
+
+            <div class="destination__card__details">
+              <div>
+                <h4>Forbidden Kingdom</h4>
+                <p>Mustang, Nepal</p>
+              </div>
+              <div class="destination__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.7
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="./pages/lumbini.html">
+          <div class="destination__card">
+            <div class="image-container">
+              <img
+                src="https://images.pexels.com/photos/7331531/pexels-photo-7331531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="destination"
+              />
+              <div class="image-overlay"></div>
+              <div class="image-overlay-text">Show Details</div>
+            </div>
+
+            <div class="destination__card__details">
+              <div>
+                <h4>Sacred Serenity</h4>
+                <p>Lumbini, Nepal</p>
+              </div>
+              <div class="destination__rating">
+                <span><i class="ri-star-fill"></i></span>
+                4.7
+              </div>
+            </div>
+          </div>
+        </a>
 
         <div class="overlay" id="overlay"></div>
-        <div class="modal" id="modal">
-          <h3>Mountains and Lakes</h3>
-          <p>
-            Located in the beautiful city of Pokhara, Nepal, this destination
-            offers breathtaking views of the Himalayas along with tranquil
-            lakes. A perfect getaway for nature lovers and adventure seekers
-            alike.
-          </p>
-          <button class="close-btn" id="closeBtn">Close</button>
-        </div>
       </div>
     </section>
 
@@ -158,7 +211,9 @@
         />
       </div>
       <div class="showcase__content">
-        <h4>UNVEIL THE MAGIC OF NEPAL WITH ZORBA HOLIDAYS</h4>
+        <h4 class="primary-text">
+          UNVEIL THE MAGIC OF NEPAL WITH ZORBA HOLIDAYS
+        </h4>
         <p>
           Embark on an extraordinary adventure with Zorba Holidays, where we
           bring you closer to the heart of Nepal. Specializing in the
@@ -261,8 +316,8 @@
                   ZORBA Holidays has completely transformed my travel
                   experience. From finding hidden gems in bustling cities to
                   discovering serene retreats off the beaten path, every detail
-                  was thoughtfully arranged. I can't recommend Skywings enough
-                  for anyone looking to elevate their travel experience!
+                  was thoughtfully arranged. I can't recommend zorbaholidays
+                  enough for anyone looking to elevate their travel experience!
                 </p>
               </div>
               <div class="client__details">
@@ -368,6 +423,7 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
 

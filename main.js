@@ -69,25 +69,60 @@ ScrollReveal().reveal(".discover__card", {
   interval: 500,
 });
 
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
-  spaceBetween: 20,
-  loop: true,
-});
+document.querySelectorAll(".destination__card").forEach((card) => {
+  const bgImage = card.getAttribute("data-bg");
+  card.style.setProperty("--bg-image", `url(${bgImage})`);
+  card.style.position = "relative";
 
-document
-  .getElementById("destinationCard")
-  .addEventListener("click", function () {
-    document.getElementById("modal").classList.add("show");
-    document.getElementById("overlay").classList.add("show");
+  const bgElement = document.createElement("div");
+  bgElement.classList.add("hover-bg");
+  bgElement.style.position = "absolute";
+  bgElement.style.top = "0";
+  bgElement.style.left = "0";
+  bgElement.style.width = "100%";
+  bgElement.style.height = "100%";
+  bgElement.style.backgroundImage = `url(${bgImage})`;
+  bgElement.style.backgroundSize = "cover";
+  bgElement.style.backgroundPosition = "center";
+  bgElement.style.filter = "brightness(0.6)";
+  bgElement.style.opacity = "0";
+  bgElement.style.transition = "opacity 0.4s ease";
+  bgElement.style.zIndex = "-1";
+
+  card.appendChild(bgElement);
+
+  card.addEventListener("mouseenter", () => {
+    bgElement.style.opacity = "1";
   });
 
-document.getElementById("closeBtn").addEventListener("click", function () {
-  document.getElementById("modal").classList.remove("show");
-  document.getElementById("overlay").classList.remove("show");
+  card.addEventListener("mouseleave", () => {
+    bgElement.style.opacity = "0";
+  });
 });
 
-document.getElementById("overlay").addEventListener("click", function () {
-  document.getElementById("modal").classList.remove("show");
-  document.getElementById("overlay").classList.remove("show");
+function contactWhatsApp() {
+  window.open("https://wa.me/9779843223394", "_blank"); //
+}
+
+const swiper = new Swiper(".swiper", {
+  mousewheel: {
+    invert: false,
+  },
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    hide: true,
+  },
+
+  spaceBetween: 10,
 });
